@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include("header")-%> 
+
+<body>
+    <div class="box" id="heading">
+        <h1><%= tes %></h1>
+    </div>
+    <div class="box">
+        <% for( let i = 0; i < daftar.length; i++ ) { %>
+            <div class="item">
+            <input type="checkbox">
+            <p><%= daftar[i] %></p>
+        </div>
+        <% } %>
+
+
+        <form class="item" action="/" method="post">
+
+            <input autocomplete="off" type="text" name="aktifitas" id="" class="form-control" placeholder="aktifitas"
+                aria-describedby="helpId" />
+
+            <button class="btn btn-primary" name="list" type="submit" value=<%= tes %>  >+</button>
+
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
